@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body backgroundcolor= "#FF000">
+    <div class= "container-fluid">
+    <ul class="ARellenar">
+    </ul>
+    <ul class="InformaciónPersonal">
+    </ul>
+    <div class="InformaciónPersonal">
+        <p>Informacion Personal</p>
+        <p class="InformacionPersonal"></p>
+        <input class="cNombre" placeholder="Nombre"/>
+        <input class="cApellido" placeholder="Apellido"/>
+        <input class="cEdad" placeholder="Edad"/>
+        <input class="cCelular" placeholder="Celular"/>
+        <input class="cMail" placeholder="Mail"/>
+        <input class="cProfesion" placeholder="Profesion"/>
+        <button class="Añadir">Añadir</button>
+        <button class="eliminarinformacionpersonal">Eliminar</button>
+    </div>
+    <ul class="AAñadir">
+    </ul>
+    <ul class="ExperienciaLaboral">
+    </ul>
+    <div class="ExperienciaLaboral">
+        <p>Experiencia Laboral</p>
+        <p class="empresa"></p>
+        <input class="cEmpresa" placeholder="Empresa"/>
+        <input class="cDesde" placeholder="Desde"/>
+        <input class="cHasta" placeholder="Hasta"/>
+        <input class="cFunciones" placeholder="Funciones"/>
+        <button class="crearEmpresa">Crear</button>
+    </div>
+    <div class="ExperienciaLaboral" style="display:none">
+    <p>Editar</p>
+    <p class= "empresa identificador"></p>
+    <p class= "empresa"></p>
+    <input class="cEmpresa" placeholder="Empresa"/>
+    <input class="cDesde" placeholder="Desde"/>
+    <input class="cHasta" placeholder="Hasta"/>
+    <input class="cFunciones" placeholder="Funciones"/>
+    <button class="editarExperienciaLaboral"> Editar </button>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+
+
+      
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+      <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyC2iuUGQFO1Pkz9turq5I8IQqYDw0ZJzHM",
+        authDomain: "angelescv98-af2d2.firebaseapp.com",
+        databaseURL: "https://angelescv98-af2d2.firebaseio.com",
+        projectId: "angelescv98-af2d2",
+        storageBucket: "angelescv98-af2d2.appspot.com",
+        messagingSenderId: "299855475417",
+        appId: "1:299855475417:web:8ff32f1c4a6816441404c8",
+        measurementId: "G-3T78DTVLP5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+
+        <script src="index.js"></script>
+    </body>
+<html>
